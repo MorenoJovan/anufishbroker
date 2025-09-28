@@ -18,9 +18,9 @@ const ClientDashboard = () => {
     } else {
       navigate('/login'); // Redirect to login if not logged in
     }
-  }, [navigate]);
+      }, [navigate]);
 
-  const handleLogout = () => {
+   const handleLogout = () => {
     localStorage.removeItem('user');
     navigate('/login'); // Redirect to LoginForm
   };
